@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Pacient</title>
+    <style>
+        /* Stiluri CSS pentru pagina medicului */
+        body {
+             background-image: url('img3.png');
+	    background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="text"],  input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Bun venit!</h2>
+    <form method="post" action="programare.php">
+	<input type="text" id="idProgramare" name="idProgramare" placeholder="ID Programare "><br>
+	<input type="text" id="idPacient" name="idPacient" placeholder="ID Pacient "><br>
+    <input type="text" id="idMedic" name="idMedic" placeholder="ID Medic "><br>
+    <input type="text" id="ora" name="ora" placeholder="Ora"><br>
+    <input type="text" id="data" name="data" placeholder="Data"><br>
+    <input type="submit" value="Creeaza programare">
+    </form>
+</div>
+</body>
+</html>

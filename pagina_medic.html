@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina Medic</title>
+    <style>
+        /* Stiluri CSS pentru pagina medicului */
+        body {
+            background-image: url('img3.png'); 
+	        background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="submit"], input[type="submit"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <h2>Bun venit, medic!</h2>
+    <form method="post" action="adauga_pacient.php">
+          <input type="text" id="idPacient" name="idPacient" placeholder="ID pacient"><br>
+	   <input type="text" id="numePacient" name="numePacient" placeholder="Nume pacient"><br>
+	   <input type="text" id="prenumePacient" name="prenumePacient" placeholder="Prenume pacient"><br>
+           <input type="text" id="boala" name="boala" placeholder="Boala"><br>
+           <input type="text" id="pretTratament" name="pretTratament" placeholder="Pret Tratament"><br>
+           <input type="text" id="tratament" name="tratament" placeholder="Tratament"><br>
+           <input type="text" id="investigatiiClinice" name="investigatiiClinice" placeholder="Investigatii Clinice"><br>
+           <input type="text" id="investigatiiParaclinice" name="investigatiiParaclinice" placeholder="Investigatii Paraclinice"><br>
+          <input type="submit" value="Trimite">
+    </form>
+</div>
+</body>
+
+</html>

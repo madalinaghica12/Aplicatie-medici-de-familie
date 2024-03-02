@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adauga Medic</title>
+    <style>
+        /* Stiluri CSS pentru pagina medicului */
+        body {
+            background-image: url('img3.png'); 
+	        background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="text"], input[type="text"], input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <h2>Bun venit!</h2>
+    <form method="post" action="adauga_medic.php">
+          <input type="text" id="idMedic" name="idMedic" placeholder="ID Medic"><br>
+	   <input type="text" id="numeMedic" name="numeMedic" placeholder="Nume Medic"><br>
+	   <input type="text" id="prenumeMedic" name="prenumeMedic" placeholder="Prenume Medic"><br>
+           <input type="text" id="specializare" name="specializare" placeholder="Spceializare"><br>
+          <input type="submit" value="Trimite">
+    </form>
+</div>
+</body>
+
+</html>

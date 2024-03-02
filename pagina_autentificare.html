@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Autentificare</title>
+    <style>
+        /* Stiluri CSS pentru pagina medicului */
+        body {
+             background-image: url('img3.png');
+	    background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+       .autentificare-container {
+   	 margin-bottom: 20px;
+	}
+    </style>
+    
+</head>
+<body>
+
+<div class="container">
+  <h2>Autentificare</h2>
+
+<div class="autentificare-container">
+    <form action="pagina_admin.html" method="post">
+        <label for="admin">Utilizator:</label>
+        <input type="text" id="username_admin" name="username" required>
+
+        <label for="admin">Parolă:</label>
+        <input type="password" id="password_admin" name="password" required>
+
+        <button type="submit">Autentificare Admin</button>
+    </form>
+</div>
+
+<div class="autentificare-container">
+    <form action="pagina_medic.html" method="post">
+        <label for="medic">Utilizator:</label>
+        <input type="text" id="username_medic" name="username" required>
+
+        <label for="medic">Parolă:</label>
+        <input type="password" id="password_medic" name="password" required>
+
+        <button type="submit">Autentificare Medic</button>
+    </form>
+</div>
+
+<div class="autentificare-container">
+    <form action="pagina_pacient.html" method="post">
+        <label for="pacient">Utilizator:</label>
+        <input type="text" id="username_medic" name="username" required>
+
+        <label for="pacient">Parolă:</label>
+        <input type="password" id="password_medic" name="password" required>
+
+        <button type="submit">Autentificare Pacient</button>
+    </form>
+</div>
+
+<div class="autentificare-container">
+    <form action="pagina_asistenta.html" method="post">
+        <label for="asistenta">Utilizator:</label>
+        <input type="text" id="username_medic" name="username" required>
+
+        <label for="asistenta">Parolă:</label>
+        <input type="password" id="password_medic" name="password" required>
+
+        <button type="submit">Autentificare Asistenta</button>
+    </form>
+</div>
+</body>
+</html>

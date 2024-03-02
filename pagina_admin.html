@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Admin</title>
+    <style>
+        /* Stiluri CSS pentru pagina medicului */
+        body {
+             background-image: url('img3.png');
+	    background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+        }
+	input[type="submit"], input[type="submit"], input[type="submit"], input[type="submit"], input[type="submit"], input[type="submit"], input[type="submit"]
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        function deschideFereastraAdMed() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('adauga_medic.html', '_blank');
+        }
+        function deschideFereastraAdP() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('pagina_medic.html', '_blank');
+        }
+        function deschideFereastraAfisLM() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('lista_medici.php', '_blank');
+        }
+        function deschideFereastraStergeM() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('sterge_medic.html', '_blank');
+        }
+        function deschideFereastraEditM() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('editeaza_medic.php', '_blank');
+        }
+        function deschideFereastraAfisLP() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('lista_pacienti.php', '_blank');
+        }
+        function deschideFereastraStergeP() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('sterge_pacient.html', '_blank');
+        }
+        function deschideFereastraEditp() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('editeaza_pacient.php', '_blank');
+        }
+        
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Bun venit!</h2>
+    <!-- Adaugă aici conținutul specific pentru pagina medicului -->
+    <p>
+	<input type="submit" value="Adauga Medic" onclick="deschideFereastraAdMed()">
+	<input type="submit" value="Adauga pacient" onclick="deschideFereastraAdP()">
+        <input type="submit" value="Afiseaza Lista Medici" onclick="deschideFereastraAfisLM()">
+        <input type="submit" value="Sterge Medic" onclick="deschideFereastraStergeM()">
+        
+	<input type="submit" value="Afiseaza Lista Pacienti" onclick="deschideFereastraAfisLP()">
+	<input type="submit" value="Sterge Pacient" onclick="deschideFereastraStergeP()">
+        
+   </p>
+</div>
+</body>
+</html>

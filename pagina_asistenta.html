@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Asistenta</title>
+    <style>
+        /* Stiluri CSS pentru pagina medicului */
+        body {
+             background-image: url('img3.png');
+	    background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="submit"], input[type="submit"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+    </style>
+     <script>
+        function deschideFereastraProgramare() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('verifica_programare.php', '_blank');
+        }
+        function deschideFereastraPacient() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('verifica_pacient.php', '_blank');
+        }
+        function deschideFereastraLegatura() {
+            // Deschide o nouă fereastră când butonul "Verifica Programare" este apăsat
+            window.open('legatura_medic.php', '_blank');
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Bun venit, asistenta!</h2>
+ 
+    <p>
+        <input type="submit" value="Verifica Pacient" onclick="deschideFereastraPacient()">
+	    <input type="submit" value="verifica Programare" onclick="deschideFereastraProgramare()">
+        <input type="submit" value="Legatura cu medicul specialist"
+onclick="deschideFereastraLegatura()">
+   </p>
+</div>
+</body>
+</html>
